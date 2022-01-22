@@ -1,0 +1,155 @@
+        @charset "UTF-8";
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Set Nav Bar */
+        
+        #stickyNavbar {
+            position: fixed;
+            background: linear-gradient(rgb(233, 87, 87), rgb(91, 91, 219));
+            border: 8px solid purple;
+            text-align: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #all {
+            background-color: #f6c1ed;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #content {
+            padding: 16px;
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .introNash {
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        h1 {
+            display: flex;
+            flex-flow: column;
+            color: white;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        /* Adjust Images */
+        
+        .downTown {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .textWrapLeft {
+            float: left;
+            clear: right;
+            width: 49%;
+            height: auto;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+        }
+        
+        .textWrapRight {
+            float: right;
+            clear: left;
+            width: 49%;
+            height: auto;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+        }
+        
+        .guitarLeft,
+        .motorWorks {
+            float: left;
+            width: auto;
+            height: 10rem;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+        }
+        
+        .guitarRight {
+            float: right;
+            width: auto;
+            height: 10rem;
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+        }
+        
+        #museums {
+            display: inline-block;
+        }
+        
+        #slideshow img:not(:first-child) {
+            display: none;
+        }
+        
+        .album {
+            float: none;
+            width: auto;
+            height: 20rem;
+            margin: 10px;
+        }
+        
+        #slideshow {
+            text-align: center;
+            height: 200px;
+        }
+        
+        #slideshow img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .footer {
+            position: fixed;
+            border: 8px solid purple;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(rgb(91, 91, 219), rgb(233, 87, 87));
+            color: white;
+            text-align: left;
+            margin-top: 0;
+        }
+        /* Media Queries for Attractions */
+        
+        @media (min-width: 769px) {
+            .content {
+                width: 95%;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
+        /*Remove the float on smaller screens (smartphones -- portrait) */
+        
+        @media only screen and (max-width: 400px) {
+            .textWrapLeft,
+            .textWrapRight {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 400px) {
+            .headerButtons {
+                font-size: 5px;
+            }
+        }
